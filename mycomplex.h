@@ -15,12 +15,12 @@ public:
       Complex (const Complex & );
      ~Complex();
 
-void Set( double aRe, double aIm = 0);/// Assigns the complex number a new value.
+void Set (double aRe, double aIm = 0);/// Assigns the complex number a new value.
       operator double();
       double abs();
 
-      friend istream & operator >> (istream & ,Complex &);
-      friend ostream& operator<< (ostream &, Complex &);
+      friend istream & operator >> (istream &, Complex &);
+      friend ostream & operator << (ostream &, Complex &);
 
       Complex operator + (const Complex &);
       Complex operator - (const Complex &);
